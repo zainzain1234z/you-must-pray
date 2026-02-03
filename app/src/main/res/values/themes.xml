@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.YouMustPray" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_600</item>
+        <item name="colorPrimaryVariant">@color/green_900</item>
+        <item name="colorOnPrimary">@color/cream</item>
+        <item name="colorSecondary">@color/green_300</item>
+        <item name="colorOnSecondary">@color/green_900</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/green_900</item>
+    </style>
+</resources>
