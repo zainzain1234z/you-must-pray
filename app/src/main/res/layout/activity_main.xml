@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_900">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Must Pray"
+        android:textColor="@color/cream"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cream"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <TextView
+        android:id="@+id/nextPrayerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cream"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/locationText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <TextView
+        android:id="@+id/prayerTimesText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cream"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/nextPrayerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cream"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/prayerTimesText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Refresh Location"
+        android:backgroundTint="@color/green_600"
+        android:textColor="@color/cream"
+        app:layout_constraintTop_toBottomOf="@id/statusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="48dp" />
+
+    <Button
+        android:id="@+id/lockButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Prayer Lock"
+        android:backgroundTint="@color/green_500"
+        android:textColor="@color/cream"
+        app:layout_constraintTop_toBottomOf="@id/refreshButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="48dp" />
+
+    <Button
+        android:id="@+id/unlockButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Capture Prayer Mat"
+        android:backgroundTint="@color/green_300"
+        android:textColor="@color/green_900"
+        app:layout_constraintTop_toBottomOf="@id/lockButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="48dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
